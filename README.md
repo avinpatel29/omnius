@@ -20,7 +20,7 @@ Eclipse/IntelliJ
 For Challenge-1: 
     mvn clean install -Dcomponent=<component_name>
     Eg: mvn clean install -Dcomponent=API (this won't show any results)
-    or
+                             (or)
     Go to /src/test/java/com/omnius/api & execute 'API_Tests.java' as this has main() method.
 ```
 ```

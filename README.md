@@ -1,5 +1,5 @@
 # Omni:us
-An selenium based 'Page Factory Model' automation framework for web based tests, which can be extended for API's also.
+An selenium based 'Page Factory Model' automation framework for web based tests, which can be extended for API's also (partly integrated).
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -13,18 +13,20 @@ Eclipse/IntelliJ
 ```
 
 ## Running the tests
-1. Git clone https://github.com/avinpatel29/hellofresh.git
+1. Git clone https://github.com/avinpatel29/omnius.git
 2. Once clone is successful, import the project as “Existing maven project” in IDE (eclipse of IntelliJ)
 3. Once the project is imported successfully, you can trigger the API or UI tests by opening the terminal in the IDE and providing below command:
 ```
-For UI:
-    mvn clean install -Dcomponent=<component_name> -Denv=<environment_name> -Dbrowser=<browser>
-    Eg: mvn clean install -Dcomponent=UI -Denv=dev -Dbrowser=chrome
+For Challenge-1: 
+    mvn clean install -Dcomponent=<component_name>
+    Eg: mvn clean install -Dcomponent=API (this won't show any results)
+    or
+    Go to /src/test/java/com/omnius/api & execute 'API_Tests.java' as this has main() method.
 ```
 ```
-For API:
-    mvn clean install -Dcomponent=<component_name> -Denv=<environment_name>
-    Eg: mvn clean install -Dcomponent=API -Denv=dev
+For challenge-2:(UI tests)
+    mvn clean install -Dcomponent=<component_name> 
+    Eg: mvn clean install -Dcomponent=UI 
 ```
 
 <b>Note:</b> Drivers are also included in the project. Chrome driver included in the project is 78.0.x. Please feel free to replace with the version of driver where you want to run the tests.</font>
